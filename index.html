@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poeticbox</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script> 
+</head>
+
+<a-assets>
+    <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+    <img id="negro" src="./negro.jpeg">
+    <img id="negro" src="./huesocolor.jpeg">
+</a-assets>
+<body>
+    <a-scene>
+    <a-box position="0.369 6.600 -4.366" rotation="0 45 0" color="#eae666"></a-box>
+      
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="20" color="#b375ae"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+
+      <a-entity scale="2 2 2" position= "-3.996  4.427 -10.255" text-geometry="value: POETIC BOX" 
+      material= "shader: flat; color: #000000;"></a-entity>
+
+      <a-entity  rotation="0 180 0" position= "5.752  5.176 4.309" text-geometry="value: Que los desaparecidos sean tus poemas" 
+      material= "shader: flat; color: #000000;"></a-entity>
+
+
+      <a-entity rotation="0 90 0" position= "-9.087  4.955 3.096" text-geometry="value: Mis ilusiones no caben en tus algoritmos" 
+      material= "shader: flat; color: #f7f7f7;"></a-entity>
+
+      <a-entity rotation="0 -90 0" position= "9.146  4.955 -6.331" text-geometry="value: Vivo sin vivir en la red" 
+      material= "shader: flat; color: #f7f7f7;"></a-entity>
+
+
+      <a-image src= "#negro" material="side: double; alphatest: 0.5s" scale= "20 10 40" position="10.014 5.022 -4.031" rotation= "0.00  90.00  0.00"></a-image>
+      <a-image src= "#negro" material="side: double; alphatest: 0.5s" scale= "20 10 40" position="-10.011 5.022 -4.031" rotation= "0.00  90.00  0.00"></a-image>
+      <a-image src= "#huesocolor" material="side: double; alphatest: 0.5s" scale= "20 10 40" position="0.005 5.022 -13.665" rotation= "0.00  180  0.00"></a-image>
+      <a-image src= "#huesocolor" material="side: double; alphatest: 0.5s" scale= "20 10 40" position="-0.005 5.032 6.089" rotation= "0.00  180  0.00"></a-image>
+    </a-scene>
+  </body>
+</html>
+
+
+</body>
+</html>
